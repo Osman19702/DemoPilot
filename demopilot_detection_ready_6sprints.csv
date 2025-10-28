@@ -1,0 +1,1810 @@
+Issue key,Issue id,Summary,Issue Type,Status,Priority,Resolution,Assignee,Reporter,Labels,Components,Created,Updated,Fix Version/s,Sprint,Story Points,Epic Link,Description,Comments Count,PR Count,Attachment Count,Linked Bugs Count,Words in Description,Has Metric Number
+DP-1,10001,EPIC: Ranker,Epic,Done,Medium,Done,Backend Lead,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: Ranker. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: Ranker'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",2,0,1,0,32,0
+DP-2,10002,EPIC: Exporters,Epic,Done,Medium,Done,Frontend Lead,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: Exporters. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: Exporters'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",4,0,1,0,32,0
+DP-3,10003,EPIC: Auth,Epic,Done,Medium,Done,Data/ML,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: Auth. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: Auth'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",1,0,0,0,32,0
+DP-4,10004,EPIC: Ingestion & Normalization,Epic,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: Ingestion & Normalization. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: Ingestion & Normalization'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",3,0,2,0,36,0
+DP-5,10005,EPIC: Explainability,Epic,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: Explainability. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: Explainability'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",4,0,1,0,32,0
+DP-6,10006,EPIC: Dash & API,Epic,Done,Medium,Done,DevOps,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: Dash & API. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: Dash & API'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",2,0,2,0,36,0
+DP-7,10007,EPIC: PPTX Theming,Epic,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: PPTX Theming. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: PPTX Theming'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",4,0,1,0,34,0
+DP-8,10008,EPIC: Caching & Perf,Epic,Done,Medium,Done,Backend Lead,Osman Turalioglu,epic,,2025-05-11 00:00,2025-05-18 00:00,,,0,,"Business goal: Caching & Perf. Success metric: improved demo clarity & speed.
+
+—
+Epic Narrative: This epic organizes related work under 'EPIC: Caching & Perf'.
+Outcome: coherent slides and synced artifacts across child issues. Components: nan.",2,0,1,0,36,0
+DP-9,10009,Add per-item explainability strings,Story,Done,Low,Done,Osman Turalioglu,Osman Turalioglu,security,ml,2025-06-05 13:00,2025-06-06 13:00,1.1,Sprint 1,2,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show add per-item explainability strings results.
+
+—
+As a Engineering Manager, I need **add per-item explainability strings** so that it de‑duplicates overlapping tickets and PR links.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Add per-item explainability strings** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: ml.
+
+Value: direct customer-facing impact; standardizes the narrative.
+Metric: ≥4.6/5 CSAT.
+Demo: open the app, select the current sprint, and show the KPI slide.",1,2,3,1,186,1
+DP-10,10010,Ranker baseline (tf-idf + heuristics),Task,Done,Low,Done,Osman Turalioglu,Osman Turalioglu,customer-impact,auth,2025-06-03 01:00,2025-06-08 01:00,1.1,Sprint 1,2,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show ranker baseline (tf-idf + heuristics) results.
+
+—
+As a Product Owner, I need **ranker baseline (tf-idf + heuristics)** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Ranker baseline (tf-idf + heuristics)** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: auth.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",3,1,3,0,180,1
+DP-11,10011,Spike: SBERT embedding benchmark,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,tech-debt,export;integration,2025-06-02 17:00,2025-06-08 17:00,1.1,Sprint 1,2,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show spike: sbert embedding benchmark results.
+
+—
+As a Sprint Demo Stakeholder, I need **spike: sbert embedding benchmark** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Spike: SBERT embedding benchmark** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: export;integration.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",4,2,3,2,179,1
+DP-12,10012,Attachment parsing & mime handling,Task,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,,export;integration,2025-06-08 05:00,2025-06-14 05:00,1.1,Sprint 1,2,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **attachment parsing & mime handling** so that it improves traceability between Epics and Stories.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: export;integration.
+
+Context: minor config harmonization across environments. No direct user-facing changes this iteration.",1,1,0,1,135,0
+DP-13,10013,Markdown generator (ordered with PPTX),Task,Done,Highest,Done,Frontend Lead,Osman Turalioglu,tech-debt,auth,2025-06-08 10:00,2025-06-10 10:00,1.1,Sprint 1,8,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show markdown generator (ordered with pptx) results.
+
+—
+As a QA Lead, I need **markdown generator (ordered with pptx)** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Markdown generator (ordered with PPTX)** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: auth.
+
+Value: direct customer-facing impact; improves predictability vs. reported metrics.
+Metric: ≤±5% predictability error.
+Demo: open the app, select the current sprint, and show the KPI slide.",1,3,0,3,194,1
+DP-14,10014,Add per-item explainability strings,Story,Done,Low,Done,Backend Lead,Osman Turalioglu,,auth;ui,2025-06-08 02:00,2025-06-11 02:00,1.1,Sprint 1,3,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show add per-item explainability strings results.
+
+—
+As a Engineering Manager, I need **add per-item explainability strings** so that it improves traceability between Epics and Stories.
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Add per-item explainability strings** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: auth;ui.
+
+Value: enables faster executive reviews; standardizes the narrative.
+Metric: +25% reviewer throughput.
+Demo: open the app, select the current sprint, and show the KPI slide.",6,3,2,0,191,1
+DP-15,10015,Bug: label parsing for semicolons,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,customer-impact,export,2025-06-07 12:00,2025-06-13 12:00,1.1,Sprint 1,2,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show bug: label parsing for semicolons results.
+
+—
+As a Sprint Demo Stakeholder, I need **bug: label parsing for semicolons** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Bug: label parsing for semicolons** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: export.
+
+Value: improves stakeholder clarity; cuts context switches.
+Metric: +25% reviewer throughput.
+Demo: open the app, select the current sprint, and show the KPI slide.",6,0,3,3,193,1
+DP-16,10016,UI: Quick download panel,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,export,2025-06-05 15:00,2025-06-06 15:00,1.1,Sprint 1,1,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show ui: quick download panel results.
+
+—
+As a Engineering Manager, I need **ui: quick download panel** so that it improves predictability against reported metrics.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **UI: Quick download panel** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: export.
+
+Value: high visibility for leadership demos; standardizes the narrative.
+Metric: ≥4.6/5 CSAT.
+Demo: click 'Generate', review top-ranked items with reasons, and show the PPTX preview.",3,2,1,1,191,1
+DP-17,10017,Perf: Cache JIRA field lookups,Spike,Done,Low,Done,Backend Lead,Osman Turalioglu,security,ui,2025-06-04 21:00,2025-06-08 21:00,1.1,Sprint 1,2,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show perf: cache jira field lookups results.
+
+—
+As a Product Owner, I need **perf: cache jira field lookups** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Perf: Cache JIRA field lookups** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: ui.
+
+Value: improves stakeholder clarity; improves predictability vs. reported metrics.
+Metric: +25% reviewer throughput.
+Demo: open the app, select the current sprint, and show the KPI slide.",5,0,4,3,195,1
+DP-18,10018,Normalize JIRA fields for ranking,Story,Done,Highest,Done,Data/ML,Osman Turalioglu,,export,2025-06-03 13:00,2025-06-08 13:00,1.1,Sprint 1,5,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show normalize jira fields for ranking results.
+
+—
+As a Support Analyst, I need **normalize jira fields for ranking** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **Normalize JIRA fields for ranking** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: export.
+
+Value: direct customer-facing impact; reduces prep time.
+Metric: +25% reviewer throughput.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",5,0,0,3,194,1
+DP-19,10019,UI: Quick download panel,Story,Done,Low,Done,Data/ML,Osman Turalioglu,security,export,2025-06-05 12:00,2025-06-06 12:00,1.1,Sprint 1,3,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show ui: quick download panel results.
+
+—
+As a Sprint Demo Stakeholder, I need **ui: quick download panel** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 1', and show the output slide where **UI: Quick download panel** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: export.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",3,2,1,2,177,1
+DP-20,10020,Normalize JIRA fields for ranking,Story,Done,Lowest,Done,DevOps,Osman Turalioglu,docs;tech-debt,auth,2025-06-06 04:00,2025-06-11 04:00,1.1,Sprint 1,8,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **normalize jira fields for ranking** so that it surfaces risk and follow‑ups early.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: auth.
+
+Context: general refactor to simplify module boundaries. No measurable stakeholder effect recorded this sprint.",2,0,2,0,135,0
+DP-21,10021,PR link ingestion & dedup,Story,Done,High,Done,Osman Turalioglu,Osman Turalioglu,,export;ml,2025-06-19 15:00,2025-06-23 15:00,1.2,Sprint 2,2,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show pr link ingestion & dedup results.
+
+—
+As a Customer Success Manager, I need **pr link ingestion & dedup** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **PR link ingestion & dedup** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: export;ml.
+
+Value: improves stakeholder clarity; raises reviewer throughput.
+Metric: +25% reviewer throughput.
+Demo: click 'Generate', review top-ranked items with reasons, and show the PPTX preview.",7,1,4,1,194,1
+DP-22,10022,PPTX master & slide layouts,Task,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,customer-impact;tech-debt,ui,2025-06-21 17:00,2025-06-22 17:00,1.2,Sprint 2,2,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Support Analyst, I need **pptx master & slide layouts** so that it improves predictability against reported metrics.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: ui.
+
+Context: minor config harmonization across environments. Internal-only change with limited visibility.",2,1,1,1,133,0
+DP-23,10023,Attachment parsing & mime handling,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,customer-impact;docs,ml,2025-06-20 17:00,2025-06-27 17:00,1.2,Sprint 2,2,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show attachment parsing & mime handling results.
+
+—
+As a Engineering Manager, I need **attachment parsing & mime handling** so that it improves traceability between Epics and Stories.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **Attachment parsing & mime handling** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: ml.
+
+Value: high visibility for leadership demos; reduces prep time.
+Metric: ≥4.6/5 CSAT.
+Demo: click 'Generate', review top-ranked items with reasons, and show the PPTX preview.",4,3,4,2,193,1
+DP-24,10024,Spike: SBERT embedding benchmark,Task,Done,Low,Done,Osman Turalioglu,Osman Turalioglu,,export;integration,2025-06-21 00:00,2025-06-22 00:00,1.2,Sprint 2,2,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show spike: sbert embedding benchmark results.
+
+—
+As a QA Lead, I need **spike: sbert embedding benchmark** so that it de‑duplicates overlapping tickets and PR links.
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **Spike: SBERT embedding benchmark** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: export;integration.
+
+Value: removes blocker for sales demo; improves predictability vs. reported metrics.
+Metric: ≤±5% predictability error.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",3,0,1,1,195,1
+DP-25,10025,Attachment parsing & mime handling,Story,Done,Highest,Done,Frontend Lead,Osman Turalioglu,,export,2025-06-19 06:00,2025-06-22 06:00,1.2,Sprint 2,3,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show attachment parsing & mime handling results.
+
+—
+As a Engineering Manager, I need **attachment parsing & mime handling** so that it de‑duplicates overlapping tickets and PR links.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **Attachment parsing & mime handling** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: export.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",0,2,1,2,180,1
+DP-26,10026,Add per-item explainability strings,Task,Done,High,Done,Frontend Lead,Osman Turalioglu,,export;ml,2025-06-22 21:00,2025-06-23 21:00,1.2,Sprint 2,2,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show add per-item explainability strings results.
+
+—
+As a Engineering Manager, I need **add per-item explainability strings** so that it clarifies business value in plain English.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **Add per-item explainability strings** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: export;ml.
+
+Value: improves stakeholder clarity; cuts context switches.
+Metric: ≤±5% predictability error.
+Demo: open the app, select the current sprint, and show the KPI slide.",1,2,2,0,191,1
+DP-27,10027,CI: E2E smoke via FastAPI,Bug,Done,Lowest,Done,Frontend Lead,Osman Turalioglu,performance;tech-debt,ml;ui,2025-06-19 23:00,2025-06-20 23:00,1.2,Sprint 2,1,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Customer Success Manager, I need **ci: e2e smoke via fastapi** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: ml;ui.
+
+Context: minor config harmonization across environments. Internal-only change with limited visibility.",4,0,0,0,132,0
+DP-28,10028,Normalize JIRA fields for ranking,Story,Done,Low,Done,Backend Lead,Osman Turalioglu,,ml,2025-06-22 23:00,2025-06-28 23:00,1.2,Sprint 2,3,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show normalize jira fields for ranking results.
+
+—
+As a Engineering Manager, I need **normalize jira fields for ranking** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **Normalize JIRA fields for ranking** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: ml.
+
+Value: enables faster executive reviews; standardizes the narrative.
+Metric: −60% slide creation time.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",6,3,0,2,197,1
+DP-29,10029,Narration: plain-English summary,Story,Done,Low,Done,Backend Lead,Osman Turalioglu,performance;security,auth;export,2025-06-17 18:00,2025-06-20 18:00,1.2,Sprint 2,5,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Product Owner, I need **narration: plain-english summary** so that it clarifies business value in plain English.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: auth;export.
+
+Context: routine maintenance aligning with internal standards. No direct user-facing changes this iteration.",2,1,2,0,131,0
+DP-30,10030,CI: E2E smoke via FastAPI,Story,Done,Low,Done,Data/ML,Osman Turalioglu,docs,auth;backend,2025-06-22 05:00,2025-06-27 05:00,1.2,Sprint 2,5,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show ci: e2e smoke via fastapi results.
+
+—
+As a Support Analyst, I need **ci: e2e smoke via fastapi** so that it clarifies business value in plain English.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **CI: E2E smoke via FastAPI** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: auth;backend.
+
+Value: removes blocker for sales demo; raises reviewer throughput.
+Metric: +25% reviewer throughput.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",2,0,1,1,197,1
+DP-31,10031,OAuth with refresh token rotation,Story,Done,Low,Done,Data/ML,Osman Turalioglu,,auth;backend,2025-06-20 01:00,2025-06-22 01:00,1.2,Sprint 2,3,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Engineering Manager, I need **oauth with refresh token rotation** so that it improves traceability between Epics and Stories.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: auth;backend.
+
+Context: documentation alignment and comments cleanup. No measurable stakeholder effect recorded this sprint.",1,1,0,0,134,0
+DP-32,10032,CI: E2E smoke via FastAPI,Story,Done,Medium,Done,DevOps,Osman Turalioglu,,auth;ml,2025-06-20 17:00,2025-06-27 17:00,1.2,Sprint 2,1,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **ci: e2e smoke via fastapi** so that it clarifies business value in plain English.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: auth;ml.
+
+Context: documentation alignment and comments cleanup. No measurable stakeholder effect recorded this sprint.",2,0,2,1,136,0
+DP-33,10033,OAuth with refresh token rotation,Story,Done,Low,Done,DevOps,Osman Turalioglu,,backend;ml,2025-06-19 14:00,2025-06-22 14:00,1.2,Sprint 2,5,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show oauth with refresh token rotation results.
+
+—
+As a Engineering Manager, I need **oauth with refresh token rotation** so that it surfaces risk and follow‑ups early.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **OAuth with refresh token rotation** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: backend;ml.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",6,0,3,0,180,1
+DP-34,10034,PPTX master & slide layouts,Story,Done,Medium,Done,DevOps,Osman Turalioglu,security,ml;ui,2025-06-18 04:00,2025-06-22 04:00,1.2,Sprint 2,2,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show pptx master & slide layouts results.
+
+—
+As a Support Analyst, I need **pptx master & slide layouts** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 2', and show the output slide where **PPTX master & slide layouts** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: ml;ui.
+
+Value: improves stakeholder clarity; standardizes the narrative.
+Metric: −30 mins per sprint.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",6,0,1,1,192,1
+DP-35,10035,Spike: SBERT embedding benchmark,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,security;tech-debt,export,2025-07-02 02:00,2025-07-08 02:00,1.3,Sprint 3,1,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **spike: sbert embedding benchmark** so that it surfaces risk and follow‑ups early.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: export.
+
+Context: general refactor to simplify module boundaries. No direct user-facing changes this iteration.",0,1,2,1,131,0
+DP-36,10036,OAuth with refresh token rotation,Story,Done,Highest,Done,Osman Turalioglu,Osman Turalioglu,docs,integration,2025-07-06 07:00,2025-07-07 07:00,1.3,Sprint 3,2,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **oauth with refresh token rotation** so that it surfaces risk and follow‑ups early.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: integration.
+
+Context: routine maintenance aligning with internal standards. Internal-only change with limited visibility.",0,1,0,1,134,0
+DP-37,10037,UI: Quick download panel,Bug,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,,export,2025-07-01 17:00,2025-07-06 17:00,1.3,Sprint 3,3,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Customer Success Manager, I need **ui: quick download panel** so that it de‑duplicates overlapping tickets and PR links.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: export.
+
+Context: small internal reliability improvements. No measurable stakeholder effect recorded this sprint.",2,1,2,0,135,0
+DP-38,10038,Add per-item explainability strings,Story,Done,Lowest,Done,Frontend Lead,Osman Turalioglu,customer-impact;docs,auth;integration,2025-07-04 07:00,2025-07-05 07:00,1.3,Sprint 3,2,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show add per-item explainability strings results.
+
+—
+As a Customer Success Manager, I need **add per-item explainability strings** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **≤±5% predictability error**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **Add per-item explainability strings** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: auth;integration.
+
+Value: high visibility for leadership demos; improves predictability vs. reported metrics.
+Metric: +25% reviewer throughput.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",7,1,1,2,192,1
+DP-39,10039,Markdown generator (ordered with PPTX),Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,customer-impact;tech-debt,integration,2025-07-02 01:00,2025-07-04 01:00,1.3,Sprint 3,3,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show markdown generator (ordered with pptx) results.
+
+—
+As a Sprint Demo Stakeholder, I need **markdown generator (ordered with pptx)** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **Markdown generator (ordered with PPTX)** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: integration.
+
+Value: direct customer-facing impact; reduces prep time.
+Metric: −30 mins per sprint.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",7,0,1,1,194,1
+DP-40,10040,Normalize JIRA fields for ranking,Story,Done,Highest,Done,Frontend Lead,Osman Turalioglu,docs;performance,export;ml,2025-07-02 01:00,2025-07-03 01:00,1.3,Sprint 3,3,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Product Owner, I need **normalize jira fields for ranking** so that it surfaces risk and follow‑ups early.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: export;ml.
+
+Context: routine maintenance aligning with internal standards. No direct user-facing changes this iteration.",1,0,2,1,132,0
+DP-41,10041,Attachment parsing & mime handling,Task,Done,Low,Done,Backend Lead,Osman Turalioglu,docs;tech-debt,backend;ml,2025-07-02 06:00,2025-07-09 06:00,1.3,Sprint 3,2,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Engineering Manager, I need **attachment parsing & mime handling** so that it improves traceability between Epics and Stories.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: backend;ml.
+
+Context: minor config harmonization across environments. No direct user-facing changes this iteration.",4,0,0,0,133,0
+DP-42,10042,Markdown generator (ordered with PPTX),Task,Done,Medium,Done,Backend Lead,Osman Turalioglu,,auth;ml,2025-06-30 02:00,2025-07-06 02:00,1.3,Sprint 3,2,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show markdown generator (ordered with pptx) results.
+
+—
+As a QA Lead, I need **markdown generator (ordered with pptx)** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **Markdown generator (ordered with PPTX)** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: auth;ml.
+
+Value: improves stakeholder clarity; standardizes the narrative.
+Metric: +25% reviewer throughput.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",7,0,2,0,194,1
+DP-43,10043,Markdown generator (ordered with PPTX),Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,backend;ml,2025-07-01 08:00,2025-07-05 08:00,1.3,Sprint 3,2,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show markdown generator (ordered with pptx) results.
+
+—
+As a Engineering Manager, I need **markdown generator (ordered with pptx)** so that it clarifies business value in plain English.
+Value & Metric: Expected impact **≤±5% predictability error**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **Markdown generator (ordered with PPTX)** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: backend;ml.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",6,2,1,0,181,1
+DP-44,10044,JSON artifact writer (stable schema),Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,ml,2025-07-02 05:00,2025-07-03 05:00,1.3,Sprint 3,2,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show json artifact writer (stable schema) results.
+
+—
+As a Support Analyst, I need **json artifact writer (stable schema)** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **JSON artifact writer (stable schema)** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: ml.
+
+Value: improves stakeholder clarity; cuts context switches.
+Metric: −30 mins per sprint.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",5,3,2,0,194,1
+DP-45,10045,Add per-item explainability strings,Story,Done,Medium,Done,Data/ML,Osman Turalioglu,customer-impact;security,backend,2025-07-01 12:00,2025-07-06 12:00,1.3,Sprint 3,8,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Customer Success Manager, I need **add per-item explainability strings** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: backend.
+
+Context: small internal reliability improvements. No direct user-facing changes this iteration.",1,1,1,0,133,0
+DP-46,10046,Bug: label parsing for semicolons,Story,Done,High,Done,DevOps,Osman Turalioglu,docs;security,auth;ui,2025-07-05 19:00,2025-07-11 19:00,1.3,Sprint 3,1,DP-3,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show bug: label parsing for semicolons results.
+
+—
+As a Product Owner, I need **bug: label parsing for semicolons** so that it improves predictability against reported metrics.
+Value & Metric: Expected impact **≤±5% predictability error**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **Bug: label parsing for semicolons** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: auth;ui.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",5,0,1,1,178,1
+DP-47,10047,Security headers on FastAPI,Spike,Done,Low,Done,DevOps,Osman Turalioglu,,ml,2025-07-06 22:00,2025-07-12 22:00,1.3,Sprint 3,5,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show security headers on fastapi results.
+
+—
+As a Engineering Manager, I need **security headers on fastapi** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **Security headers on FastAPI** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: ml.
+
+Value: removes blocker for sales demo; improves predictability vs. reported metrics.
+Metric: −30 mins per sprint.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",6,3,3,1,193,1
+DP-48,10048,CI: E2E smoke via FastAPI,Story,Done,Medium,Done,DevOps,Osman Turalioglu,docs;security,backend;export,2025-07-04 01:00,2025-07-10 01:00,1.3,Sprint 3,2,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show ci: e2e smoke via fastapi results.
+
+—
+As a Support Analyst, I need **ci: e2e smoke via fastapi** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **≤±5% predictability error**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **CI: E2E smoke via FastAPI** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: backend;export.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",1,2,1,1,181,1
+DP-49,10049,PR link ingestion & dedup,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,tech-debt,export;ui,2025-07-16 02:00,2025-07-23 02:00,1.4,Sprint 4,8,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Customer Success Manager, I need **pr link ingestion & dedup** so that it surfaces risk and follow‑ups early.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: export;ui.
+
+Context: routine maintenance aligning with internal standards. No direct user-facing changes this iteration.",0,0,0,0,136,0
+DP-50,10050,Bug: 401 after token refresh expiry,Story,Done,Lowest,Done,Frontend Lead,Osman Turalioglu,customer-impact,export,2025-07-19 23:00,2025-07-25 23:00,1.4,Sprint 4,2,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Support Analyst, I need **bug: 401 after token refresh expiry** so that it improves predictability against reported metrics.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: export.
+
+Context: routine maintenance aligning with internal standards. Minimal impact on demo narrative this cycle.",0,1,2,0,135,0
+DP-51,10051,Bug: label parsing for semicolons,Story,Done,Low,Done,Frontend Lead,Osman Turalioglu,,integration,2025-07-19 16:00,2025-07-22 16:00,1.4,Sprint 4,2,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Support Analyst, I need **bug: label parsing for semicolons** so that it reduces manual prep time for demos.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: integration.
+
+Context: minor config harmonization across environments. No measurable stakeholder effect recorded this sprint.",0,1,0,0,136,0
+DP-52,10052,Normalize JIRA fields for ranking,Task,Done,Medium,Done,Frontend Lead,Osman Turalioglu,,export;ml,2025-07-16 14:00,2025-07-17 14:00,1.4,Sprint 4,2,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show normalize jira fields for ranking results.
+
+—
+As a Customer Success Manager, I need **normalize jira fields for ranking** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 4', and show the output slide where **Normalize JIRA fields for ranking** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: export;ml.
+
+Value: enables faster executive reviews; improves predictability vs. reported metrics.
+Metric: +25% reviewer throughput.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",3,2,1,3,197,1
+DP-53,10053,Add per-item explainability strings,Bug,Done,Low,Done,Frontend Lead,Osman Turalioglu,performance,backend;integration,2025-07-18 02:00,2025-07-20 02:00,1.4,Sprint 4,2,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Customer Success Manager, I need **add per-item explainability strings** so that it reduces manual prep time for demos.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: backend;integration.
+
+Context: documentation alignment and comments cleanup. Minimal impact on demo narrative this cycle.",5,1,1,0,135,0
+DP-54,10054,Normalize JIRA fields for ranking,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,backend;integration,2025-07-17 21:00,2025-07-21 21:00,1.4,Sprint 4,8,DP-3,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show normalize jira fields for ranking results.
+
+—
+As a Product Owner, I need **normalize jira fields for ranking** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 4', and show the output slide where **Normalize JIRA fields for ranking** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: backend;integration.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",6,1,3,0,180,1
+DP-55,10055,JSON artifact writer (stable schema),Story,Done,Medium,Done,Data/ML,Osman Turalioglu,,integration,2025-07-19 00:00,2025-07-25 00:00,1.4,Sprint 4,2,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Sprint Demo Stakeholder, I need **json artifact writer (stable schema)** so that it improves predictability against reported metrics.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: integration.
+
+Context: documentation alignment and comments cleanup. Internal-only change with limited visibility.",3,1,1,0,132,0
+DP-56,10056,Ranker baseline (tf-idf + heuristics),Task,Done,Highest,Done,Data/ML,Osman Turalioglu,customer-impact,integration,2025-07-16 03:00,2025-07-17 03:00,1.4,Sprint 4,3,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **ranker baseline (tf-idf + heuristics)** so that it improves predictability against reported metrics.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: integration.
+
+Context: documentation alignment and comments cleanup. Internal-only change with limited visibility.",1,0,0,0,133,0
+DP-57,10057,Perf: Cache JIRA field lookups,Task,Done,Medium,Done,Data/ML,Osman Turalioglu,,backend,2025-07-14 20:00,2025-07-18 20:00,1.4,Sprint 4,3,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show perf: cache jira field lookups results.
+
+—
+As a Engineering Manager, I need **perf: cache jira field lookups** so that it surfaces risk and follow‑ups early.
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 4', and show the output slide where **Perf: Cache JIRA field lookups** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: backend.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",6,1,1,0,180,1
+DP-58,10058,PR link ingestion & dedup,Story,Done,Medium,Done,DevOps,Osman Turalioglu,,integration;ui,2025-07-14 17:00,2025-07-16 17:00,1.4,Sprint 4,2,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Product Owner, I need **pr link ingestion & dedup** so that it improves predictability against reported metrics.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: integration;ui.
+
+Context: general refactor to simplify module boundaries. Minimal impact on demo narrative this cycle.",5,1,1,0,135,0
+DP-59,10059,PR link ingestion & dedup,Story,Done,Low,Done,DevOps,Osman Turalioglu,performance,auth;ml,2025-07-18 21:00,2025-07-22 21:00,1.4,Sprint 4,1,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Product Owner, I need **pr link ingestion & dedup** so that it improves traceability between Epics and Stories.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: auth;ml.
+
+Context: routine maintenance aligning with internal standards. Minimal impact on demo narrative this cycle.",3,1,0,1,137,0
+DP-60,10060,PPTX master & slide layouts,Story,Done,Low,Done,DevOps,Osman Turalioglu,customer-impact,integration,2025-07-18 06:00,2025-07-20 06:00,1.4,Sprint 4,5,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show pptx master & slide layouts results.
+
+—
+As a Support Analyst, I need **pptx master & slide layouts** so that it improves traceability between Epics and Stories.
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 4', and show the output slide where **PPTX master & slide layouts** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: integration.
+
+Value: enables faster executive reviews; improves predictability vs. reported metrics.
+Metric: −30 mins per sprint.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",5,3,1,2,196,1
+DP-61,10061,UI: Quick download panel,Story,Done,Highest,Done,Osman Turalioglu,Osman Turalioglu,customer-impact,ui,2025-07-30 10:00,2025-08-06 10:00,1.5,Sprint 5,3,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show ui: quick download panel results.
+
+—
+As a Sprint Demo Stakeholder, I need **ui: quick download panel** so that it improves traceability between Epics and Stories.
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **UI: Quick download panel** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: ui.
+
+Value: improves stakeholder clarity; cuts context switches.
+Metric: ≤±5% predictability error.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",4,2,1,0,190,1
+DP-62,10062,Attachment parsing & mime handling,Story,Done,High,Done,Osman Turalioglu,Osman Turalioglu,performance;security,ml,2025-07-31 12:00,2025-08-06 12:00,1.5,Sprint 5,1,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show attachment parsing & mime handling results.
+
+—
+As a Engineering Manager, I need **attachment parsing & mime handling** so that it surfaces risk and follow‑ups early.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Attachment parsing & mime handling** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: ml.
+
+Value: high visibility for leadership demos; improves predictability vs. reported metrics.
+Metric: −30 mins per sprint.
+Demo: open the app, select the current sprint, and show the KPI slide.",3,2,4,0,196,1
+DP-63,10063,Normalize JIRA fields for ranking,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,docs,ml,2025-07-28 12:00,2025-08-04 12:00,1.5,Sprint 5,2,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show normalize jira fields for ranking results.
+
+—
+As a Support Analyst, I need **normalize jira fields for ranking** so that it improves predictability against reported metrics.
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Normalize JIRA fields for ranking** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: ml.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",3,1,2,2,180,1
+DP-64,10064,Add per-item explainability strings,Task,Done,Highest,Done,Osman Turalioglu,Osman Turalioglu,docs,integration;ml,2025-08-01 01:00,2025-08-02 01:00,1.5,Sprint 5,2,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **add per-item explainability strings** so that it de‑duplicates overlapping tickets and PR links.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: integration;ml.
+
+Context: small internal reliability improvements. Minimal impact on demo narrative this cycle.",0,1,2,0,134,0
+DP-65,10065,Add per-item explainability strings,Story,Done,High,Done,Frontend Lead,Osman Turalioglu,tech-debt,backend,2025-07-30 16:00,2025-08-04 16:00,1.5,Sprint 5,8,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show add per-item explainability strings results.
+
+—
+As a Support Analyst, I need **add per-item explainability strings** so that it de‑duplicates overlapping tickets and PR links.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Add per-item explainability strings** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: backend.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",2,0,0,0,178,1
+DP-66,10066,Narration: plain-English summary,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,docs;performance,backend,2025-07-29 17:00,2025-07-31 17:00,1.5,Sprint 5,3,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show narration: plain-english summary results.
+
+—
+As a Sprint Demo Stakeholder, I need **narration: plain-english summary** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Narration: plain-English summary** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: backend.
+
+Value: improves stakeholder clarity; raises reviewer throughput.
+Metric: −60% slide creation time.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",5,1,2,3,191,1
+DP-67,10067,Bug: 401 after token refresh expiry,Task,Done,Lowest,Done,Backend Lead,Osman Turalioglu,customer-impact,export;ui,2025-07-29 21:00,2025-08-02 21:00,1.5,Sprint 5,2,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Sprint Demo Stakeholder, I need **bug: 401 after token refresh expiry** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: export;ui.
+
+Context: routine maintenance aligning with internal standards. No measurable stakeholder effect recorded this sprint.",1,0,2,1,138,0
+DP-68,10068,Bug: label parsing for semicolons,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,tech-debt,ml,2025-08-02 16:00,2025-08-03 16:00,1.5,Sprint 5,3,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show bug: label parsing for semicolons results.
+
+—
+As a Product Owner, I need **bug: label parsing for semicolons** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−60% slide creation time**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Bug: label parsing for semicolons** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: ml.
+
+Value: direct customer-facing impact; reduces prep time.
+Metric: ≤±5% predictability error.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",3,1,1,1,193,1
+DP-69,10069,Integration tests for exporters,Story,Done,Highest,Done,Data/ML,Osman Turalioglu,,export,2025-07-29 07:00,2025-08-02 07:00,1.5,Sprint 5,8,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show integration tests for exporters results.
+
+—
+As a QA Lead, I need **integration tests for exporters** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Integration tests for exporters** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: export.
+
+Value: improves stakeholder clarity; cuts context switches.
+Metric: ≥4.6/5 CSAT.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",5,1,3,2,186,1
+DP-70,10070,Markdown generator (ordered with PPTX),Task,Done,Highest,Done,DevOps,Osman Turalioglu,performance;security,integration,2025-07-31 14:00,2025-08-06 14:00,1.5,Sprint 5,2,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show markdown generator (ordered with pptx) results.
+
+—
+As a Product Owner, I need **markdown generator (ordered with pptx)** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Markdown generator (ordered with PPTX)** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: integration.
+
+Value: high visibility for leadership demos; raises reviewer throughput.
+Metric: −60% slide creation time.
+Demo: click 'Generate', review top-ranked items with reasons, and show the PPTX preview.",6,3,2,2,195,1
+DP-71,10071,Bug: label parsing for semicolons,Task,Done,Medium,Done,DevOps,Osman Turalioglu,,backend,2025-08-02 23:00,2025-08-06 23:00,1.5,Sprint 5,2,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a QA Lead, I need **bug: label parsing for semicolons** so that it surfaces risk and follow‑ups early.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: backend.
+
+Context: small internal reliability improvements. No measurable stakeholder effect recorded this sprint.",4,0,2,1,131,0
+DP-72,10072,Perf: Cache JIRA field lookups,Story,Done,High,Done,DevOps,Osman Turalioglu,,backend;ui,2025-07-28 17:00,2025-08-04 17:00,1.5,Sprint 5,2,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show perf: cache jira field lookups results.
+
+—
+As a Support Analyst, I need **perf: cache jira field lookups** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 5', and show the output slide where **Perf: Cache JIRA field lookups** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: backend;ui.
+
+Value: high visibility for leadership demos; improves predictability vs. reported metrics.
+Metric: +25% reviewer throughput.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",7,0,3,2,198,1
+DP-73,10073,Chart: sprint KPIs slide,Story,Done,Lowest,Done,DevOps,Osman Turalioglu,,export;ml,2025-07-31 06:00,2025-08-03 06:00,1.5,Sprint 5,2,DP-6,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Support Analyst, I need **chart: sprint kpis slide** so that it reduces manual prep time for demos.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: export;ml.
+
+Context: documentation alignment and comments cleanup. No measurable stakeholder effect recorded this sprint.",4,0,0,0,134,0
+DP-74,10074,JSON artifact writer (stable schema),Story,Done,Highest,Done,Osman Turalioglu,Osman Turalioglu,docs;tech-debt,integration,2025-08-16 02:00,2025-08-21 02:00,1.6,Sprint 6,1,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Support Analyst, I need **json artifact writer (stable schema)** so that it de‑duplicates overlapping tickets and PR links.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: integration.
+
+Context: small internal reliability improvements. No direct user-facing changes this iteration.",1,0,0,0,134,0
+DP-75,10075,Normalize JIRA fields for ranking,Bug,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,,export;ui,2025-08-16 19:00,2025-08-23 19:00,1.6,Sprint 6,1,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show normalize jira fields for ranking results.
+
+—
+As a Support Analyst, I need **normalize jira fields for ranking** so that it de‑duplicates overlapping tickets and PR links.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Normalize JIRA fields for ranking** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: export;ui.
+
+Value: improves stakeholder clarity; reduces prep time.
+Metric: ≤±5% predictability error.
+Demo: open the app, select the current sprint, and show the KPI slide.",7,3,2,1,193,1
+DP-76,10076,Bug: 401 after token refresh expiry,Task,Done,High,Done,Osman Turalioglu,Osman Turalioglu,tech-debt,ml;ui,2025-08-14 15:00,2025-08-16 15:00,1.6,Sprint 6,2,DP-7,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show bug: 401 after token refresh expiry results.
+
+—
+As a Sprint Demo Stakeholder, I need **bug: 401 after token refresh expiry** so that it surfaces risk and follow‑ups early.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Bug: 401 after token refresh expiry** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: ml;ui.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",2,0,0,2,184,1
+DP-77,10077,UI: Quick download panel,Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,,export;ml,2025-08-17 05:00,2025-08-19 05:00,1.6,Sprint 6,2,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Sprint Demo Stakeholder, I need **ui: quick download panel** so that it clarifies business value in plain English.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: export;ml.
+
+Context: general refactor to simplify module boundaries. No direct user-facing changes this iteration.",2,1,1,1,136,0
+DP-78,10078,Bug: 401 after token refresh expiry,Story,Done,High,Done,Frontend Lead,Osman Turalioglu,security,ml;ui,2025-08-15 02:00,2025-08-17 02:00,1.6,Sprint 6,1,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show bug: 401 after token refresh expiry results.
+
+—
+As a Support Analyst, I need **bug: 401 after token refresh expiry** so that it surfaces risk and follow‑ups early.
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Bug: 401 after token refresh expiry** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: ml;ui.
+
+Value: direct customer-facing impact; cuts context switches.
+Metric: −30 mins per sprint.
+Demo: open the app, select the current sprint, and show the KPI slide.",6,1,4,3,197,1
+DP-79,10079,Chart: sprint KPIs slide,Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,,integration;ui,2025-08-17 21:00,2025-08-24 21:00,1.6,Sprint 6,5,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show chart: sprint kpis slide results.
+
+—
+As a Customer Success Manager, I need **chart: sprint kpis slide** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Chart: sprint KPIs slide** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: integration;ui.
+
+Value: improves stakeholder clarity; improves predictability vs. reported metrics.
+Metric: −60% slide creation time.
+Demo: open the app, select the current sprint, and show the KPI slide.",5,2,4,0,196,1
+DP-80,10080,Attachment parsing & mime handling,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,performance,auth,2025-08-12 09:00,2025-08-17 09:00,1.6,Sprint 6,1,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show attachment parsing & mime handling results.
+
+—
+As a Customer Success Manager, I need **attachment parsing & mime handling** so that it surfaces risk and follow‑ups early.
+Value & Metric: Expected impact **−30 mins per sprint on average**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Attachment parsing & mime handling** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **field mapping drifts after JIRA updates**. Components: auth.
+
+Value: direct customer-facing impact; reduces prep time.
+Metric: ≤±5% predictability error.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",7,1,0,3,195,1
+DP-81,10081,OAuth with refresh token rotation,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,customer-impact;security,backend;ml,2025-08-11 15:00,2025-08-18 15:00,1.6,Sprint 6,5,DP-1,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show oauth with refresh token rotation results.
+
+—
+As a Sprint Demo Stakeholder, I need **oauth with refresh token rotation** so that it reduces manual prep time for demos.
+Value & Metric: Expected impact **≥4.7/5 stakeholder clarity**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **OAuth with refresh token rotation** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: backend;ml.
+
+Value: improves stakeholder clarity; standardizes the narrative.
+Metric: ≤±5% predictability error.
+Demo: click 'Generate', review top-ranked items with reasons, and show the PPTX preview.",5,3,0,1,191,1
+DP-82,10082,Spike: SBERT embedding benchmark,Bug,Done,Low,Done,Backend Lead,Osman Turalioglu,,backend;ml,2025-08-15 05:00,2025-08-19 05:00,1.6,Sprint 6,2,DP-2,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+
+
+—
+As a Product Owner, I need **spike: sbert embedding benchmark** so that it standardizes deck structure across teams.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: backend;ml.
+
+Context: minor config harmonization across environments. Internal-only change with limited visibility.",3,0,2,1,132,0
+DP-83,10083,Bug: 401 after token refresh expiry,Bug,Done,High,Done,Data/ML,Osman Turalioglu,,integration;ui,2025-08-11 19:00,2025-08-17 19:00,1.6,Sprint 6,1,DP-4,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show bug: 401 after token refresh expiry results.
+
+—
+As a Customer Success Manager, I need **bug: 401 after token refresh expiry** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Bug: 401 after token refresh expiry** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: integration;ui.
+
+Value: removes blocker for sales demo; standardizes the narrative.
+Metric: −60% slide creation time.
+Demo: reveal 'Why it matters' text and highlight the metric callout on the slide.",7,3,1,1,199,1
+DP-84,10084,Chart: sprint KPIs slide,Story,Done,Medium,Done,DevOps,Osman Turalioglu,performance;tech-debt,ui,2025-08-14 02:00,2025-08-18 02:00,1.6,Sprint 6,3,DP-8,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show chart: sprint kpis slide results.
+
+—
+As a QA Lead, I need **chart: sprint kpis slide** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Chart: sprint KPIs slide** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **missing Epic Link on migrated items**. Components: ui.
+
+Note: standard progress update; validate fields and links; no KPI change expected.",5,2,1,2,179,1
+DP-85,10085,Bug: label parsing for semicolons,Bug,Done,Lowest,Done,DevOps,Osman Turalioglu,customer-impact,ml;ui,2025-08-14 01:00,2025-08-17 01:00,1.6,Sprint 6,2,DP-5,"Why it matters: improves demo prep speed and clarity.
+Acceptance Criteria:
+- Clear value statement
+- Traceability to Epic
+- Demo script lines
+Demo: show bug: label parsing for semicolons results.
+
+—
+As a Support Analyst, I need **bug: label parsing for semicolons** so that it de‑duplicates overlapping tickets and PR links.
+Value & Metric: Expected impact **−35% context switching during prep**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 6', and show the output slide where **Bug: label parsing for semicolons** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: ml;ui.
+
+Value: direct customer-facing impact; improves predictability vs. reported metrics.
+Metric: ≤±5% predictability error.
+Demo: filter by component, export PPTX, then compare MD and JSON order.",1,2,4,1,196,1
+DP-86,10086,Make-up work to balance SP,Task,Done,Medium,Done,Frontend Lead,Osman Turalioglu,balancing,export,2025-06-19 07:00,2025-06-20 07:00,1.2,Sprint 2,2,DP-2,"Auto-added to ensure per-member 8 SP allocation for analytics/demo accuracy.
+
+—
+As a Support Analyst, I need **make-up work to balance sp** so that it reduces manual prep time for demos.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **rate limiting during peak hours**. Components: export.
+
+Context: minor config harmonization across environments. No direct user-facing changes this iteration.",0,1,1,0,121,0
+DP-87,10087,Make-up work to balance SP,Task,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,balancing,export,2025-07-02 03:00,2025-07-03 03:00,1.3,Sprint 3,2,DP-4,"Auto-added to ensure per-member 8 SP allocation for analytics/demo accuracy.
+
+—
+As a Support Analyst, I need **make-up work to balance sp** so that it standardizes deck structure across teams.
+Value & Metric: Expected impact **+25% reviewer throughput**; evidence captured in Markdown & JSON artifacts.
+Demo Script: open the generator, select 'Sprint 3', and show the output slide where **Make-up work to balance SP** is reflected with reasons.
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **CSV/attachment encoding issues**. Components: export.
+
+Value: direct customer-facing impact; cuts context switches.
+Metric: −30 mins per sprint.
+Demo: open the app, select the current sprint, and show the KPI slide.",7,2,2,3,169,1
+DP-88,10088,Make-up work to balance SP,Task,Done,Medium,Done,Data/ML,Osman Turalioglu,balancing,integration;ui,2025-08-11 20:00,2025-08-12 20:00,1.6,Sprint 6,7,DP-4,"Auto-added to ensure per-member 8 SP allocation for analytics/demo accuracy.
+
+—
+As a Product Owner, I need **make-up work to balance sp** so that it enables one‑click artifact generation (PPTX/MD/JSON).
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: integration;ui.
+
+Context: minor config harmonization across environments. Minimal impact on demo narrative this cycle.",4,1,0,1,122,0
+DP-89,10089,Make-up work to balance SP,Task,Done,Medium,Done,DevOps,Osman Turalioglu,balancing,ui,2025-08-14 03:00,2025-08-15 03:00,1.6,Sprint 6,3,DP-8,"Auto-added to ensure per-member 8 SP allocation for analytics/demo accuracy.
+
+—
+As a Sprint Demo Stakeholder, I need **make-up work to balance sp** so that it improves traceability between Epics and Stories.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **token refresh edge cases**. Components: ui.
+
+Context: documentation alignment and comments cleanup. No direct user-facing changes this iteration.",3,0,0,0,121,0
+DP-90,10090,Make-up work to balance SP,Task,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,balancing,integration,2025-08-16 03:00,2025-08-17 03:00,1.6,Sprint 6,4,DP-5,"Auto-added to ensure per-member 8 SP allocation for analytics/demo accuracy.
+
+—
+As a Sprint Demo Stakeholder, I need **make-up work to balance sp** so that it clarifies business value in plain English.
+
+
+Acceptance Criteria:
+- AC1: Clear 'why it matters' sentence present.
+- AC2: Links/Epics resolved; fields normalized.
+- AC3: Slide text ≤ 40 words; jargon minimized.
+- AC4: JSON includes `reason`, `kpi`, and `slide_id`.
+- Acceptance: measurable outcome recorded in JSON and shown on PPTX KPI slide.
+Test Notes: verified happy path and a negative path; attached screenshot where relevant; added small dataset to reproduce edge cases.
+Risk & Dependency: Watch for **inconsistent Story Point usage across teams**. Components: integration.
+
+Context: small internal reliability improvements. No direct user-facing changes this iteration.",3,0,1,0,122,0

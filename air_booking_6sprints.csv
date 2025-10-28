@@ -1,0 +1,828 @@
+Issue key,Issue id,Summary,Issue Type,Status,Priority,Resolution,Assignee,Reporter,Labels,Components,Created,Updated,Fix Version/s,Sprint,Story Points,Epic Link,Description
+ABS-1,30001,EPIC: Shopping & Dynamic Pricing,Epic,Done,Medium,Done,DevOps,Osman Turalioglu,epic,,2024-12-16 00:00,2024-12-23 00:00,,,,,Epic for Shopping & Dynamic Pricing. Outcome: reliable airline booking flows and artifacts across channels.
+ABS-2,30002,EPIC: Order Management (PNR/ETKT/EMD),Epic,Done,Medium,Done,Frontend Lead,Osman Turalioglu,epic,,2024-12-16 00:00,2024-12-23 00:00,,,,,Epic for Order Management (PNR/ETKT/EMD). Outcome: reliable airline booking flows and artifacts across channels.
+ABS-3,30003,EPIC: Ancillaries (Seats/Bags/Meals),Epic,Done,Medium,Done,DevOps,Osman Turalioglu,epic,,2024-12-16 00:00,2024-12-23 00:00,,,,,Epic for Ancillaries (Seats/Bags/Meals). Outcome: reliable airline booking flows and artifacts across channels.
+ABS-4,30004,EPIC: Payments & Refunds (PCI/BSP),Epic,Done,Medium,Done,Backend Lead,Osman Turalioglu,epic,,2024-12-16 00:00,2024-12-23 00:00,,,,,Epic for Payments & Refunds (PCI/BSP). Outcome: reliable airline booking flows and artifacts across channels.
+ABS-5,30005,EPIC: Schedule Change & Disruption,Epic,Done,Medium,Done,Data/ML,Osman Turalioglu,epic,,2024-12-16 00:00,2024-12-23 00:00,,,,,Epic for Schedule Change & Disruption. Outcome: reliable airline booking flows and artifacts across channels.
+ABS-6,30006,EPIC: NDC Gateway & GDS Interop,Epic,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,epic,,2024-12-16 00:00,2024-12-23 00:00,,,,,Epic for NDC Gateway & GDS Interop. Outcome: reliable airline booking flows and artifacts across channels.
+ABS-7,30007,EPIC: Loyalty & Profiles,Epic,Done,Medium,Done,DevOps,Osman Turalioglu,epic,,2024-12-16 00:00,2024-12-23 00:00,,,,,Epic for Loyalty & Profiles. Outcome: reliable airline booking flows and artifacts across channels.
+ABS-8,30008,Refund auto-eligibility based on fare rules,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,performance;tech-debt,inventory;order,2025-01-10 22:00,2025-01-12 22:00,R1.1,Sprint 1,3,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Refund auto-eligibility based on fare rules.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-9,30009,Disruption notification email/SMS templates,Story,Done,Low,Done,Osman Turalioglu,Osman Turalioglu,performance;ux,order;ticketing,2025-01-08 20:00,2025-01-12 20:00,R1.1,Sprint 1,5,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Disruption notification email/SMS templates.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-10,30010,Ancillary upsell in post-booking (MEAL/BAG/SEAT),Task,Done,Medium,Done,Frontend Lead,Osman Turalioglu,,ndc;order,2025-01-10 02:00,2025-01-14 02:00,R1.1,Sprint 1,3,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Ancillary upsell in post-booking (MEAL/BAG/SEAT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-11,30011,EMD exchange when upgrading seat to extra legroom,Bug,Done,Low,Done,Frontend Lead,Osman Turalioglu,,refunds,2025-01-09 00:00,2025-01-12 00:00,R1.1,Sprint 1,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: EMD exchange when upgrading seat to extra legroom.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-12,30012,Reissue workflow for involuntary schedule change (SC1),Task,Done,High,Done,Frontend Lead,Osman Turalioglu,performance;tech-debt,inventory;payments,2025-01-10 21:00,2025-01-16 21:00,R1.1,Sprint 1,3,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Reissue workflow for involuntary schedule change (SC1).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-13,30013,NDC OrderCreate + OrderReshop happy-path,Task,Done,High,Done,Backend Lead,Osman Turalioglu,security;tech-debt,loyalty,2025-01-11 11:00,2025-01-16 11:00,R1.1,Sprint 1,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: NDC OrderCreate + OrderReshop happy-path.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-14,30014,Card tokenization (PCI) and 3DS2 challenge flow,Story,Done,High,Done,Backend Lead,Osman Turalioglu,,pricing,2025-01-08 23:00,2025-01-13 23:00,R1.1,Sprint 1,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Card tokenization (PCI) and 3DS2 challenge flow.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-15,30015,Disruption notification email/SMS templates,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,customer-impact;performance,payments;shopping,2025-01-10 02:00,2025-01-11 02:00,R1.1,Sprint 1,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Disruption notification email/SMS templates.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-16,30016,Reissue workflow for involuntary schedule change (SC1),Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,order;pricing,2025-01-09 14:00,2025-01-11 14:00,R1.1,Sprint 1,2,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Reissue workflow for involuntary schedule change (SC1).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-17,30017,Credit shell creation and lifecycle,Bug,Done,Lowest,Done,Data/ML,Osman Turalioglu,,order;ticketing,2025-01-10 19:00,2025-01-14 19:00,R1.1,Sprint 1,8,ABS-5,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Credit shell creation and lifecycle.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-18,30018,Reissue workflow for involuntary schedule change (SC1),Story,Done,Medium,Done,DevOps,Osman Turalioglu,,checkin,2025-01-09 11:00,2025-01-15 11:00,R1.1,Sprint 1,2,ABS-2,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Reissue workflow for involuntary schedule change (SC1).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-19,30019,Reissue workflow for involuntary schedule change (SC1),Story,Done,Medium,Done,DevOps,Osman Turalioglu,docs;performance,loyalty;order,2025-01-12 03:00,2025-01-14 03:00,R1.1,Sprint 1,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Reissue workflow for involuntary schedule change (SC1).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-20,30020,Credit shell creation and lifecycle,Story,Done,Medium,Done,DevOps,Osman Turalioglu,,loyalty;ticketing,2025-01-11 06:00,2025-01-13 06:00,R1.1,Sprint 1,2,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Credit shell creation and lifecycle.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-21,30021,BSP reporting export (IIN/ADM/ACM) validation,Story,Done,Medium,Done,DevOps,Osman Turalioglu,,checkin;payments,2025-01-10 09:00,2025-01-11 09:00,R1.1,Sprint 1,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: BSP reporting export (IIN/ADM/ACM) validation.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-22,30022,GDS PNR import (Sabre Amadeus) to internal order,Task,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,customer-impact;ux,payments,2025-01-21 00:00,2025-01-25 00:00,R1.2,Sprint 2,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: GDS PNR import (Sabre Amadeus) to internal order.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-23,30023,Queue management for ticketing failures (Q-IN/OUT),Bug,Done,Highest,Done,Osman Turalioglu,Osman Turalioglu,,ancillary;ndc,2025-01-25 20:00,2025-01-26 20:00,R1.2,Sprint 2,2,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Queue management for ticketing failures (Q-IN/OUT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-24,30024,EMD exchange when upgrading seat to extra legroom,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,tech-debt;ux,order,2025-01-24 03:00,2025-01-27 03:00,R1.2,Sprint 2,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: EMD exchange when upgrading seat to extra legroom.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-25,30025,SSR DOCS/DOCU validation at check-in,Story,Done,Lowest,Done,Osman Turalioglu,Osman Turalioglu,,ndc,2025-01-26 23:00,2025-01-28 23:00,R1.2,Sprint 2,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: SSR DOCS/DOCU validation at check-in.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-26,30026,Disruption notification email/SMS templates,Bug,Done,Highest,Done,Frontend Lead,Osman Turalioglu,,pricing,2025-01-25 04:00,2025-01-30 04:00,R1.2,Sprint 2,1,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Disruption notification email/SMS templates.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-27,30027,GDS PNR import (Sabre Amadeus) to internal order,Bug,Done,Highest,Done,Frontend Lead,Osman Turalioglu,,inventory;ops,2025-01-25 22:00,2025-01-30 22:00,R1.2,Sprint 2,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: GDS PNR import (Sabre Amadeus) to internal order.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-28,30028,Auto-reprice on RBD closure (inventory decrement),Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,performance;ux,loyalty;ndc,2025-01-25 01:00,2025-01-26 01:00,R1.2,Sprint 2,3,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Auto-reprice on RBD closure (inventory decrement).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-29,30029,NDC OrderCreate + OrderReshop happy-path,Task,Done,Medium,Done,Frontend Lead,Osman Turalioglu,,refunds,2025-01-22 09:00,2025-01-26 09:00,R1.2,Sprint 2,2,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: NDC OrderCreate + OrderReshop happy-path.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-30,30030,Queue management for ticketing failures (Q-IN/OUT),Task,Done,Medium,Done,Backend Lead,Osman Turalioglu,docs;ux,refunds;shopping,2025-01-21 06:00,2025-01-24 06:00,R1.2,Sprint 2,1,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Queue management for ticketing failures (Q-IN/OUT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-31,30031,Revenue-management feed integration for demand curve,Task,Done,Low,Done,Backend Lead,Osman Turalioglu,security,inventory;pricing,2025-01-24 19:00,2025-01-27 19:00,R1.2,Sprint 2,5,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Revenue-management feed integration for demand curve.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-32,30032,NDC OrderCreate + OrderReshop happy-path,Story,Done,Lowest,Done,Backend Lead,Osman Turalioglu,,payments,2025-01-24 01:00,2025-01-27 01:00,R1.2,Sprint 2,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: NDC OrderCreate + OrderReshop happy-path.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-33,30033,Payment retry with fallbacks (PayPal/ApplePay),Bug,Done,High,Done,Data/ML,Osman Turalioglu,,ancillary;ticketing,2025-01-22 13:00,2025-01-28 13:00,R1.2,Sprint 2,8,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Payment retry with fallbacks (PayPal/ApplePay).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-34,30034,OrderChange with partial refund + EMD-S cancel,Bug,Done,Medium,Done,DevOps,Osman Turalioglu,customer-impact;ux,refunds,2025-01-22 05:00,2025-01-27 05:00,R1.2,Sprint 2,3,ABS-5,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: OrderChange with partial refund + EMD-S cancel.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-35,30035,E-ticket issuance (125) with EMD-A for baggage,Task,Done,Medium,Done,DevOps,Osman Turalioglu,,ancillary;loyalty,2025-01-26 22:00,2025-01-27 22:00,R1.2,Sprint 2,5,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: E-ticket issuance (125) with EMD-A for baggage.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-36,30036,Revenue-management feed integration for demand curve,Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,performance;security,ndc;pricing,2025-02-07 23:00,2025-02-08 23:00,R1.3,Sprint 3,5,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Revenue-management feed integration for demand curve.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-37,30037,Availability cache invalidation on schedule update,Bug,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,customer-impact;performance,checkin;refunds,2025-02-07 05:00,2025-02-08 05:00,R1.3,Sprint 3,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Availability cache invalidation on schedule update.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-38,30038,SSR DOCS/DOCU validation at check-in,Story,Done,High,Done,Osman Turalioglu,Osman Turalioglu,docs;ux,ndc,2025-02-04 00:00,2025-02-06 00:00,R1.3,Sprint 3,1,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: SSR DOCS/DOCU validation at check-in.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-39,30039,BSP reporting export (IIN/ADM/ACM) validation,Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,tech-debt,payments,2025-02-05 01:00,2025-02-10 01:00,R1.3,Sprint 3,5,ABS-2,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: BSP reporting export (IIN/ADM/ACM) validation.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-40,30040,Card tokenization (PCI) and 3DS2 challenge flow,Story,Done,Low,Done,Frontend Lead,Osman Turalioglu,,ops;pricing,2025-02-05 15:00,2025-02-09 15:00,R1.3,Sprint 3,3,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Card tokenization (PCI) and 3DS2 challenge flow.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-41,30041,Implement ATPCO fare rule parsing for penalty/changes,Story,Done,Highest,Done,Backend Lead,Osman Turalioglu,tech-debt,checkin,2025-02-06 01:00,2025-02-08 01:00,R1.3,Sprint 3,8,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Implement ATPCO fare rule parsing for penalty/changes.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-42,30042,Reissue workflow for involuntary schedule change (SC1),Task,Done,High,Done,Data/ML,Osman Turalioglu,performance,ancillary;order,2025-02-08 10:00,2025-02-11 10:00,R1.3,Sprint 3,5,ABS-5,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Reissue workflow for involuntary schedule change (SC1).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-43,30043,PNR audit log with masking of PII (GDPR),Bug,Done,Lowest,Done,Data/ML,Osman Turalioglu,,ndc,2025-02-05 21:00,2025-02-07 21:00,R1.3,Sprint 3,3,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: PNR audit log with masking of PII (GDPR).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-44,30044,NDC Price with branded fares and ancillaries,Story,Done,Medium,Done,DevOps,Osman Turalioglu,docs;tech-debt,ops;shopping,2025-02-08 06:00,2025-02-10 06:00,R1.3,Sprint 3,5,ABS-5,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: NDC Price with branded fares and ancillaries.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-45,30045,Payment retry with fallbacks (PayPal/ApplePay),Bug,Done,Medium,Done,DevOps,Osman Turalioglu,performance;ux,order,2025-02-07 01:00,2025-02-13 01:00,R1.3,Sprint 3,3,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Payment retry with fallbacks (PayPal/ApplePay).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-46,30046,Card tokenization (PCI) and 3DS2 challenge flow,Spike,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,tech-debt,checkin;inventory,2025-02-18 12:00,2025-02-21 12:00,R1.4,Sprint 4,8,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Card tokenization (PCI) and 3DS2 challenge flow.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-47,30047,Refund auto-eligibility based on fare rules,Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,customer-impact,checkin,2025-02-21 10:00,2025-02-22 10:00,R1.4,Sprint 4,1,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Refund auto-eligibility based on fare rules.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-48,30048,Seat map service with RBD/SSR (WCHR/WCHS) handling,Story,Done,Low,Done,Frontend Lead,Osman Turalioglu,performance,ops,2025-02-20 11:00,2025-02-25 11:00,R1.4,Sprint 4,5,ABS-2,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Seat map service with RBD/SSR (WCHR/WCHS) handling.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-49,30049,Queue management for ticketing failures (Q-IN/OUT),Story,Done,Highest,Done,Frontend Lead,Osman Turalioglu,performance;tech-debt,gds;ticketing,2025-02-19 05:00,2025-02-24 05:00,R1.4,Sprint 4,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Queue management for ticketing failures (Q-IN/OUT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-50,30050,Auto-reprice on RBD closure (inventory decrement),Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,security;tech-debt,refunds,2025-02-20 19:00,2025-02-23 19:00,R1.4,Sprint 4,2,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Auto-reprice on RBD closure (inventory decrement).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-51,30051,Implement ATPCO fare rule parsing for penalty/changes,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,pricing,2025-02-20 11:00,2025-02-22 11:00,R1.4,Sprint 4,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Implement ATPCO fare rule parsing for penalty/changes.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-52,30052,Seat map service with RBD/SSR (WCHR/WCHS) handling,Story,Done,Lowest,Done,Backend Lead,Osman Turalioglu,customer-impact;performance,order,2025-02-20 17:00,2025-02-23 17:00,R1.4,Sprint 4,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Seat map service with RBD/SSR (WCHR/WCHS) handling.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-53,30053,SSR DOCS/DOCU validation at check-in,Story,Done,Low,Done,Backend Lead,Osman Turalioglu,,checkin;refunds,2025-02-21 02:00,2025-02-25 02:00,R1.4,Sprint 4,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: SSR DOCS/DOCU validation at check-in.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-54,30054,Queue management for ticketing failures (Q-IN/OUT),Task,Done,Low,Done,Data/ML,Osman Turalioglu,tech-debt,inventory,2025-02-20 17:00,2025-02-24 17:00,R1.4,Sprint 4,5,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Queue management for ticketing failures (Q-IN/OUT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-55,30055,Seat map service with RBD/SSR (WCHR/WCHS) handling,Bug,Done,Low,Done,Data/ML,Osman Turalioglu,performance,payments;pricing,2025-02-22 05:00,2025-02-27 05:00,R1.4,Sprint 4,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Seat map service with RBD/SSR (WCHR/WCHS) handling.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-56,30056,Auto-reprice on RBD closure (inventory decrement),Bug,Done,Medium,Done,Data/ML,Osman Turalioglu,docs,checkin;shopping,2025-02-19 02:00,2025-02-21 02:00,R1.4,Sprint 4,1,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Auto-reprice on RBD closure (inventory decrement).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-57,30057,Auto-reprice on RBD closure (inventory decrement),Story,Done,High,Done,DevOps,Osman Turalioglu,,ndc,2025-02-19 13:00,2025-02-25 13:00,R1.4,Sprint 4,3,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Auto-reprice on RBD closure (inventory decrement).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-58,30058,Seat map service with RBD/SSR (WCHR/WCHS) handling,Story,Done,Medium,Done,DevOps,Osman Turalioglu,,ndc;ops,2025-02-23 12:00,2025-02-25 12:00,R1.4,Sprint 4,2,ABS-5,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Seat map service with RBD/SSR (WCHR/WCHS) handling.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-59,30059,Implement ATPCO fare rule parsing for penalty/changes,Bug,Done,Medium,Done,DevOps,Osman Turalioglu,docs;ux,loyalty,2025-02-21 04:00,2025-02-26 04:00,R1.4,Sprint 4,2,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Implement ATPCO fare rule parsing for penalty/changes.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-60,30060,EMD exchange when upgrading seat to extra legroom,Bug,Done,Low,Done,DevOps,Osman Turalioglu,docs;ux,checkin,2025-02-18 05:00,2025-02-19 05:00,R1.4,Sprint 4,1,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: EMD exchange when upgrading seat to extra legroom.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-61,30061,Reissue workflow for involuntary schedule change (SC1),Story,Done,Low,Done,Osman Turalioglu,Osman Turalioglu,security;tech-debt,loyalty,2025-03-06 06:00,2025-03-09 06:00,R1.5,Sprint 5,8,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Reissue workflow for involuntary schedule change (SC1).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-62,30062,Revenue-management feed integration for demand curve,Story,Done,Low,Done,Frontend Lead,Osman Turalioglu,,inventory;ticketing,2025-03-04 07:00,2025-03-07 07:00,R1.5,Sprint 5,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Revenue-management feed integration for demand curve.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-63,30063,NDC OrderCreate + OrderReshop happy-path,Story,Done,Low,Done,Frontend Lead,Osman Turalioglu,,loyalty;ticketing,2025-03-04 22:00,2025-03-05 22:00,R1.5,Sprint 5,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: NDC OrderCreate + OrderReshop happy-path.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-64,30064,Reissue workflow for involuntary schedule change (SC1),Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,,ops,2025-03-09 17:00,2025-03-10 17:00,R1.5,Sprint 5,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Reissue workflow for involuntary schedule change (SC1).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-65,30065,Disruption notification email/SMS templates,Bug,Done,Medium,Done,Frontend Lead,Osman Turalioglu,ux,inventory,2025-03-07 18:00,2025-03-12 18:00,R1.5,Sprint 5,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Disruption notification email/SMS templates.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-66,30066,BSP reporting export (IIN/ADM/ACM) validation,Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,payments;pricing,2025-03-04 05:00,2025-03-08 05:00,R1.5,Sprint 5,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: BSP reporting export (IIN/ADM/ACM) validation.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-67,30067,Queue management for ticketing failures (Q-IN/OUT),Story,Done,Medium,Done,Backend Lead,Osman Turalioglu,,ndc;shopping,2025-03-06 13:00,2025-03-08 13:00,R1.5,Sprint 5,1,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Queue management for ticketing failures (Q-IN/OUT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-68,30068,PNR audit log with masking of PII (GDPR),Task,Done,Medium,Done,Backend Lead,Osman Turalioglu,,loyalty,2025-03-08 16:00,2025-03-14 16:00,R1.5,Sprint 5,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: PNR audit log with masking of PII (GDPR).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-69,30069,Disruption notification email/SMS templates,Story,Done,Highest,Done,Backend Lead,Osman Turalioglu,,order;refunds,2025-03-06 07:00,2025-03-11 07:00,R1.5,Sprint 5,3,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Disruption notification email/SMS templates.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-70,30070,Implement ATPCO fare rule parsing for penalty/changes,Bug,Done,Medium,Done,Data/ML,Osman Turalioglu,ux,ndc;pricing,2025-03-09 08:00,2025-03-11 08:00,R1.5,Sprint 5,5,ABS-2,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Implement ATPCO fare rule parsing for penalty/changes.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-71,30071,SSR DOCS/DOCU validation at check-in,Story,Done,Medium,Done,Data/ML,Osman Turalioglu,ux,shopping,2025-03-08 23:00,2025-03-09 23:00,R1.5,Sprint 5,3,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: SSR DOCS/DOCU validation at check-in.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-72,30072,Ancillary upsell in post-booking (MEAL/BAG/SEAT),Story,Done,Low,Done,DevOps,Osman Turalioglu,,gds;ndc,2025-03-07 14:00,2025-03-13 14:00,R1.5,Sprint 5,8,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Ancillary upsell in post-booking (MEAL/BAG/SEAT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-73,30073,PNR audit log with masking of PII (GDPR),Story,Done,Highest,Done,Osman Turalioglu,Osman Turalioglu,,ndc;payments,2025-03-21 21:00,2025-03-22 21:00,R1.6,Sprint 6,2,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: PNR audit log with masking of PII (GDPR).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-74,30074,Queue management for ticketing failures (Q-IN/OUT),Task,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,,checkin;inventory,2025-03-21 15:00,2025-03-24 15:00,R1.6,Sprint 6,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Queue management for ticketing failures (Q-IN/OUT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-75,30075,Auto-reprice on RBD closure (inventory decrement),Story,Done,High,Done,Osman Turalioglu,Osman Turalioglu,,checkin;payments,2025-03-22 03:00,2025-03-25 03:00,R1.6,Sprint 6,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Auto-reprice on RBD closure (inventory decrement).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-76,30076,Seat reassignment after aircraft swap (config change),Story,Done,Medium,Done,Osman Turalioglu,Osman Turalioglu,performance,checkin;gds,2025-03-18 17:00,2025-03-19 17:00,R1.6,Sprint 6,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Seat reassignment after aircraft swap (config change).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-77,30077,Availability cache invalidation on schedule update,Task,Done,Medium,Done,Frontend Lead,Osman Turalioglu,tech-debt,inventory;loyalty,2025-03-23 17:00,2025-03-27 17:00,R1.6,Sprint 6,3,ABS-5,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Availability cache invalidation on schedule update.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-78,30078,Seat reassignment after aircraft swap (config change),Story,Done,Medium,Done,Frontend Lead,Osman Turalioglu,,checkin;pricing,2025-03-23 12:00,2025-03-27 12:00,R1.6,Sprint 6,3,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Seat reassignment after aircraft swap (config change).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-79,30079,Ancillary upsell in post-booking (MEAL/BAG/SEAT),Task,Done,Low,Done,Frontend Lead,Osman Turalioglu,security,shopping,2025-03-21 07:00,2025-03-24 07:00,R1.6,Sprint 6,2,ABS-3,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Ancillary upsell in post-booking (MEAL/BAG/SEAT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-80,30080,Availability cache invalidation on schedule update,Story,Done,Lowest,Done,Backend Lead,Osman Turalioglu,,loyalty,2025-03-18 04:00,2025-03-23 04:00,R1.6,Sprint 6,2,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Availability cache invalidation on schedule update.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-81,30081,PNR audit log with masking of PII (GDPR),Task,Done,Low,Done,Backend Lead,Osman Turalioglu,customer-impact;tech-debt,checkin,2025-03-21 12:00,2025-03-27 12:00,R1.6,Sprint 6,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: PNR audit log with masking of PII (GDPR).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-82,30082,Card tokenization (PCI) and 3DS2 challenge flow,Story,Done,Low,Done,Backend Lead,Osman Turalioglu,,loyalty;refunds,2025-03-22 09:00,2025-03-27 09:00,R1.6,Sprint 6,2,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Card tokenization (PCI) and 3DS2 challenge flow.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-83,30083,Ancillary upsell in post-booking (MEAL/BAG/SEAT),Bug,Done,Medium,Done,Backend Lead,Osman Turalioglu,,ancillary;ticketing,2025-03-22 15:00,2025-03-27 15:00,R1.6,Sprint 6,2,ABS-6,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Ancillary upsell in post-booking (MEAL/BAG/SEAT).
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-84,30084,Credit shell creation and lifecycle,Story,Done,Low,Done,Data/ML,Osman Turalioglu,customer-impact;security,order;refunds,2025-03-21 16:00,2025-03-24 16:00,R1.6,Sprint 6,2,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Credit shell creation and lifecycle.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-85,30085,Implement ATPCO fare rule parsing for penalty/changes,Story,Done,Highest,Done,Data/ML,Osman Turalioglu,performance;tech-debt,shopping;ticketing,2025-03-20 20:00,2025-03-24 20:00,R1.6,Sprint 6,3,ABS-2,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Implement ATPCO fare rule parsing for penalty/changes.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-86,30086,NDC Price with branded fares and ancillaries,Spike,Done,Medium,Done,Data/ML,Osman Turalioglu,ux,ticketing,2025-03-22 23:00,2025-03-27 23:00,R1.6,Sprint 6,1,ABS-7,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: NDC Price with branded fares and ancillaries.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-87,30087,Revenue-management feed integration for demand curve,Story,Done,Low,Done,Data/ML,Osman Turalioglu,customer-impact,ndc;shopping,2025-03-19 21:00,2025-03-24 21:00,R1.6,Sprint 6,2,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Revenue-management feed integration for demand curve.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-88,30088,Credit shell creation and lifecycle,Story,Done,Low,Done,DevOps,Osman Turalioglu,,loyalty;shopping,2025-03-22 04:00,2025-03-24 04:00,R1.6,Sprint 6,5,ABS-1,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: Credit shell creation and lifecycle.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"
+ABS-89,30089,NDC Price with branded fares and ancillaries,Task,Done,High,Done,DevOps,Osman Turalioglu,ux,order;payments,2025-03-18 09:00,2025-03-21 09:00,R1.6,Sprint 6,3,ABS-4,"Why it matters: ensure robust ABS flows for airline bookings.
+Scenario: NDC Price with branded fares and ancillaries.
+Details: include PNR lifecycle (create/ticket/change), EMD (A/B), SSR, NDC/GDS parity, and queue handling.
+Acceptance:
+- Correct PTC (ADT/CHD/INF) & RBD
+- Fare family & penalty logic respected
+- KPI captured: success %, retries, time-to-issue
+Demo: create booking, apply change/refund when relevant, show ETKT/EMD/Order artifacts.
+Risk: rate limiting, stale inventory, BSP/clearing failures.
+"

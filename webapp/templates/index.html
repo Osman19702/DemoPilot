@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>DemoPilot Deck Generator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+	<style>
+		body { font-family: 'Segoe UI', sans-serif; background: #f7f9fc; padding: 2rem; color: #333; }
+		.container { max-width: 720px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+		h1 { margin-top: 0; color: #2b4f81; }
+		label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+		input[type="text"], input[type="number"], input[type="file"] { width: 100%; padding: 0.75rem; border: 1px solid #ccd6e0; border-radius: 8px; font-size: 1rem; }
+		input[type="file"] { padding: 0.4rem; }
+		.field { margin-bottom: 1.25rem; }
+		.actions { display: flex; gap: 1rem; align-items: center; }
+		button { background: #2b4f81; color: #fff; border: none; border-radius: 8px; padding: 0.8rem 1.6rem; font-size: 1rem; cursor: pointer; }
+		button:hover { background: #1f3a5c; }
+		.errors { background: #ffecec; border: 1px solid #f5a4a4; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; color: #9f1c1c; }
+		.help { font-size: 0.9rem; color: #667; margin-top: 0.35rem; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Generate a PI Demo</h1>
+		<p>Upload a Jira CSV export, choose your options, and download a polished PPTX deck.</p>
+
+		{% if errors %}
+		<div class="errors">
+			<ul>
+			{% for error in errors %}
+				<li>{{ error }}</li>
+			{% endfor %}
+			</ul>
+		</div>
+		{% endif %}
+
+		<form method="post" enctype="multipart/form-data">
+			<div class="field">
+				<label for="csv_file">CSV Export</label>
+				<input id="csv_file" name="csv_file" type="file" accept=".csv" required>
+				<p class="help">Select the Jira CSV file that contains your PI data.</p>
+			</div>
+
+			<div class="field">
+				<label for="out_name">Output Filename</label>
+				<input id="out_name" name="out_name" type="text" value="{{ form_data.out_name }}" required>
+			</div>
+
+			<div class="field">
+				<label for="top">Top Items</label>
+				<input id="top" name="top" type="number" min="1" value="{{ form_data.top }}">
+				<p class="help">How many highest-ranked items to include (default 8).</p>
+			</div>
+
+			<div class="field">
+				<label for="title">Deck Title</label>
+				<input id="title" name="title" type="text" value="{{ form_data.title }}" placeholder="Optional — will default to the detected PI">
+			</div>
+
+			<div class="actions">
+				<button type="submit">Generate PPTX</button>
+				<span class="help">Processing runs in-browser; the PPTX downloads automatically.</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
